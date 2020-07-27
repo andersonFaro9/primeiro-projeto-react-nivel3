@@ -17,6 +17,8 @@ Nesse primeiro projeto com React Js e Typescript, e styled components proposto p
 - Async Storage
 - CSS3/FLEXBOX
 
-## Getting started
+## :memo: Licença
 
-#### all you need to do is:
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
