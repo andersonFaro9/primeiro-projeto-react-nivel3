@@ -1,20 +1,21 @@
-# About
-Description about the app
+# Sobre
+Nesse primeiro projeto com React Js e Typescript, e styled components proposto pela Rockeseat, é possível adicionar repositórios do Github, clicar e ver todas as informações.
 
+# Mudanças feitas
+* Somente repositórios que tem contéudo sobre COVID-19 é aceito.
+* É imposível adicionar um mesmo repositório.
+* Uso de Media queries/CSS para deixar o layout responsivo (textos, botões e alinhamentos) e adaptável à vários tamanhos de telas.
 
-![yourImage](yourlinkhere)
+![video-primeri-projeto-nivel3](https://user-images.githubusercontent.com/3237047/88596840-65a2ba80-d03c-11ea-8f9d-5e5f86126578.gif)
 
-## Techs
+## Tecnologias
 
-- React Native
+- React JS
 - Typescript
 - styled-components
 - axios
-- State Management with Context API
 - Async Storage
-- React Navigation
-- useContext, useEffect, useState, useMemo
-- json-server
+- CSS3/FLEXBOX
 
 ## Getting started
 
