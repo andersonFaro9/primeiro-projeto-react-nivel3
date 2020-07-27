@@ -6,7 +6,14 @@ Nesse primeiro projeto com React Js e Typescript, e styled components proposto p
 * É imposível adicionar um mesmo repositório.
 * Uso de Media queries/CSS para deixar o layout responsivo (textos, botões e alinhamentos) e adaptável à vários tamanhos de telas.
 
-![video-primeri-projeto-nivel3](https://user-images.githubusercontent.com/3237047/88596840-65a2ba80-d03c-11ea-8f9d-5e5f86126578.gif)
+
+![image](https://user-images.githubusercontent.com/3237047/88602070-4f9af700-d048-11ea-822e-a584c16ec919.png)
+
+
+[Clique aqui para visualisar o resultado](https://www.youtube.com/watch?v=AID41rFs5u4)
+
+
+
 
 ## Tecnologias
 
