@@ -1,6 +1,6 @@
-import  styled from 'styled-components';
+import styled from 'styled-components';
 
-export const Header  = styled.header`
+export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -9,6 +9,7 @@ export const Header  = styled.header`
     align-items: center;
     text-decoration: none;
     color: #a8a8b3;
+    font-size:28px;
     transition: color 0.2s;
     &:hover {
       color: #666;
@@ -17,10 +18,11 @@ export const Header  = styled.header`
       margin-left: 4px;
     }
   }
+ 
 `;
 
 export const RepositoryInfo = styled.section`
-    margin-top: 80px;
+    margin-top: 30px;
     header {
       display: flex;
       align-self: auto;
@@ -33,20 +35,44 @@ export const RepositoryInfo = styled.section`
         margin-left: 24px;
         strong {
           font-size: 36px;
+          
           color: #3d3d4d;
           margin-top: 4px;
         }
+        
       }
+
+      @media (max-width:500px) {
+          div > strong {
+            font-size: 19px;
+            
+          }
+      }
+      @media (max-width:500px) {
+          div > p {
+            
+            font-size: 16px;
+            
+          }
+      }
+
+
+      
     }
+    
+    
     ul  {
       display: flex;
+      
+      align-items:center;
+      justify-content: space-evenly;
       list-style: none;
       margin-top: 40px;
 
       li {
         & + li  {
-
-           margin-left: 80px;
+          
+           margin-left: 70px; 
         }
         strong {
           display:block;
@@ -62,10 +88,27 @@ export const RepositoryInfo = styled.section`
       }
     }
 
+    @media( max-width: 500px ) {
+      ul  {
+      display: flex;
+      align-items:center;
+      justify-content: start;
+      list-style: none;
+      margin-top: 40px;
+
+      li {
+        & + li  {
+          
+           margin-left: 30px; 
+        }
+      }
+    }
+  }
+
 `;
 
 
-export const Issues = styled.div `
+export const Issues = styled.div`
 
   margin-top: 80px;
   a {

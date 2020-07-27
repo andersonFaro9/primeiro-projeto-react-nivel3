@@ -1,10 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import {useRouteMatch,Link}  from 'react-router-dom';
-import {} from '../../services/api';
+import React, { useEffect, useState } from 'react'
+import { useRouteMatch, Link } from 'react-router-dom';
+import { } from '../../services/api';
 
-import logoImg from '../../assets/logo.svg';
-import {Header, RepositoryInfo, Issues} from './styles'
-import {FiChevronLeft, FiChevronRight} from 'react-icons/fi';
+import logoImg from '../../assets/virus.svg';
+import { Header, RepositoryInfo, Issues } from './styles'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import api from '../../services/api';
 
 interface RepositoryParams {
@@ -33,18 +33,18 @@ interface Issue {
 }
 
 const Repository: React.FC = () => {
-  const [repository, setRepository] = useState<Repository | null> (null);
-  const [issues, setIssues]  = useState<Issue[]>([]);
+  const [repository, setRepository] = useState<Repository | null>(null);
+  const [issues, setIssues] = useState<Issue[]>([]);
 
-  const {params} =  useRouteMatch<RepositoryParams>();
+  const { params } = useRouteMatch<RepositoryParams>();
 
-  useEffect(()=> {
-      api.get(`repos/${params.repository}`).then(response=> {
-        setRepository(response.data);
-      });
-      api.get(`repos/${params.repository}/issues`).then(response=> {
-        setIssues(response.data);
-      });
+  useEffect(() => {
+    api.get(`repos/${params.repository}`).then(response => {
+      setRepository(response.data);
+    });
+    api.get(`repos/${params.repository}/issues`).then(response => {
+      setIssues(response.data);
+    });
 
 
   }, [params.repository]);
@@ -52,17 +52,17 @@ const Repository: React.FC = () => {
   return (
     <>
       <Header>
-        <img src={logoImg} alt = "Github Explorer" />
-        <Link to = '/'>
+        <img src={logoImg} alt="Github Explorer" />
+        <Link to='/'>
           voltar
-        <FiChevronLeft size = {20}/>
+        <FiChevronLeft size={20} />
         </Link>
       </Header>
 
       {repository ? (
-          <RepositoryInfo>
+        <RepositoryInfo>
           <header>
-            <img src={repository.owner.avatar_url} alt={repository.owner.login}/>
+            <img src={repository.owner.avatar_url} alt={repository.owner.login} />
             <div>
               <strong>{repository.full_name}</strong>
               <p>{repository.description}</p>
@@ -84,22 +84,22 @@ const Repository: React.FC = () => {
           </ul>
 
         </RepositoryInfo>
-    ): (
-      <h3>Carregando...</h3>
+      ) : (
+          <h3>Loading...</h3>
 
-    )}
+        )}
 
-    <Issues>
-      {issues.map(issue => (
-        <a target="blank" key={issue.id} href={issue.html_url}>
-          <div>
-            <strong>{issue.title}</strong>
-            <p>{issue.user.login}</p>
-          </div>
-          <FiChevronRight  size={20}/>
-        </a>
-      ))}
-    </Issues>
+      <Issues>
+        {issues.map(issue => (
+          <a target="blank" key={issue.id} href={issue.html_url}>
+            <div>
+              <strong>{issue.title}</strong>
+              <p>{issue.user.login}</p>
+            </div>
+            <FiChevronRight size={20} />
+          </a>
+        ))}
+      </Issues>
     </>
   );
 }
