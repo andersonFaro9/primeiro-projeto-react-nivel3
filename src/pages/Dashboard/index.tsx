@@ -52,11 +52,11 @@ const Dashboard: React.FC = () => {
       const repository = response.data;
 
 
-      const searchRepository = repositories.map(repo =>
+      const searchRepository = repositories.findIndex(repo =>
         repo.full_name.includes(repository.full_name),
 
       );
-      if (searchRepository != null) { setInputError('Esse repositório já foi adicionado'); return; }
+      if (searchRepository >= 0) { setInputError('Esse repositório já foi adicionado'); return; }
 
 
       if (repository.full_name.includes("COVID-19") || repository.full_name.includes("covid19")) {
