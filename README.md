@@ -2,8 +2,8 @@
 Nesse primeiro projeto com React Js e Typescript, e styled components proposto pela Rockeseat, é possível adicionar repositórios do Github, clicar e ver todas as informações.
 
 # Mudanças feitas
-* Somente repositórios que tem contéudo sobre COVID-19 é aceito.
-* É imposível adicionar um mesmo repositório.
+* Somente repositórios que tem conteúdo sobre COVID-19 é aceito.
+* É impossível adicionar um mesmo repositório.
 * Uso de Media queries/CSS para deixar o layout responsivo (textos, botões e alinhamentos) e adaptável à vários tamanhos de telas.
 
 
