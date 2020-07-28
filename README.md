@@ -10,7 +10,8 @@ Nesse primeiro projeto com React Js e Typescript, e styled components proposto p
 ![image](https://user-images.githubusercontent.com/3237047/88602070-4f9af700-d048-11ea-822e-a584c16ec919.png)
 
 
-[Clique aqui para visualisar o resultado](https://www.youtube.com/watch?v=AID41rFs5u4)
+[Clique aqui para visualisar o resultado](
+https://youtu.be/DqZQz4HakZs)
 
 
 
