@@ -1,5 +1,5 @@
 # Sobre
-Nesse primeiro projeto com React Js e Typescript, e styled components proposto pela Rockeseat, é possível adicionar repositórios do Github, clicar e ver todas as informações.
+Nesse primeiro projeto com React Js e Typescript, e styled components proposto pela Rocketseat, é possível adicionar repositórios do Github, clicar e ver todas as informações.
 
 # Mudanças feitas
 * Somente repositórios que tem conteúdo sobre COVID-19 é aceito.
